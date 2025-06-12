@@ -2,7 +2,6 @@
   <div id="myapp">
     <h1>Calculadora</h1>
     <MainCalculator />
-    <AddButton />
   </div>
 </template>
 

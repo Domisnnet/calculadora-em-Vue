@@ -1,34 +1,31 @@
 <template>
     <button class="button"
-        :classe="{ double, triple, operation }">
+        :class="{ double, triple, operation }">
         {{ label }}
     </button>
 </template>
 
 <script>
-    export default {
-        props: {
-            label: {},
-            operation: { type: Boolean },
-            double: { type: Boolean },
-            triple: { type: Boolean },
-        },
+export default {
+    props: {
+        label: {}, 
+        operation: { type: Boolean }, 
+        double: { type: Boolean }, 
+        triple: { type: Boolean } 
     }
+}
 </script>
 
 <style>
-:root {
-    --bg-button: #f0f0f0;
-    --border-button: solid 1px #888;
-}
-
 .button {
-    background-color: var(--bg-button);
-    border: none;
-    border-right: var(--border-button);
-    border-bottom: var(--border-button);
-    outline: none;
     font-size: 1.4em;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border: none;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    outline: none;
+    cursor: pointer;
 }
 
 .button:active {
