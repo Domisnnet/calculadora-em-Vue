@@ -13,7 +13,7 @@
 <style>
 .display {
     grid-column: span 4;
-    background-color: #0004;
+    background-color: rgba(0, 0, 0, 0.5);
     display:flex;
     justify-content: flex-end;
     align-items: center;
